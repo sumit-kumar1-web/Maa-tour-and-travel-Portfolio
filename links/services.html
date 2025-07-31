@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAA TOUR AND TRAVELS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="/Maa-tour-and-travel-Portfolio/style.css">
+</head>
+<body>
+
+    <!-- header part start -->
+
+    <header class="main-head">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand text-danger fw-bold fs-2" href="/index.html">
+                <div class="logo-part d-flex justify-content-center align-items-center">
+                <img src="/Maa-tour-and-travel-Portfolio/images/Untitled design (2).png" alt="LOGO" class="heading-logo">
+                <div class="">
+                <h3 class="m-0">Maa</h3>
+                <h6 class="text-white">Tour And Travels</h6>
+              </div>
+              </div>
+              </a>
+              <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Maa-tour-and-travel-Portfolio/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#car-services">Services</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li> -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Maa-tour-and-travel-Portfolio/links/about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Maa-tour-and-travel-Portfolio/links/contact.html">Contact Us</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <button class="btn head-btn mx-2 bg-white fw-bold" onClick="popupMenu()" type="button">Login</button>
+                  <button class="btn head-btn mx-2 bg-white fw-bold" onClick="signupPopupMenu()" type="button">Register</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- header part end -->
+
+
+      <!-- popup part of login button start-->
+  
+      <div class="overlay">
+
+        <div class="login-form rounded-3 shadow px-5 " id="popup-menu">
+    
+          <div class="close-btn text-center fs-3 fw-bold bg-white rounded-2"  id="close-popup">&times;</div>
+    
+          <h3 class="text-center pt-3">LOGIN</h3>
+          <form action="">
+            <div class="row py-4">
+              <div class="col-12 my-3 d-flex flex-column">
+                <label for="email" class="fw-bold mb-2">Email</label>
+                <input type="text" id="email" placeholder="Enter Email" class="border-0 rounded-2 input-text" required>
+              </div>
+    
+              <div class="col-12 my-3 d-flex flex-column">
+                <label for="Password" class="fw-bold mb-2 ">Password</label>
+                <input type="password" id="password" placeholder="Enter Password" class="border-0 rounded-2 input-text"
+                  required>
+              </div>
+    
+              <div class="col-12 my-3 ">
+                <button type="submit" class="btn bg-primary w-100 text-white">Login</button>
+              </div>
+    
+            </div>
+          </form>
+    
+          <div class="d-flex justify-content-between">
+            <div class="pb-3">
+              <p class=""> <a href="#" class="text-decoration-none"> Don't have an account?</a></p>
+            </div>
+            <div class="pb-3">
+              <p> <a href="#" class="text-decoration-none">Forget Password?</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+      <!-- popup part of login button end -->
+
+
+            <!-- popup part of signup button -->
+  
+            <div class="signup-overlay bg-secondary-subtle">
+
+              <div class="signup-form rounded-3 shadow px-5 " id="signup-popup-menu">
+          
+                <div class="close-btn text-center fs-3 fw-bold bg-white rounded-2"  id="close-signup-popup">&times;</div>
+          
+                <h3 class="text-center pt-3 ">SIGNUP</h3>
+                <form action="">
+                  <div class="row py-4">
+                    <div class="row">
+                      <div class="col-6 my-3 d-flex flex-column">
+                        <label for="name" class="fw-bold mb-2 ">Name</label>
+                      <input type="text" id="email" placeholder="First Name" class="border-0 rounded-2 input-text" required>
+                      </div>
+                      <div class="col-6 my-3 d-flex flex-column">
+                        <label for="name" class="fw-bold mb-2 ">Last Name</label>
+                      <input type="text" id="email" placeholder="Last Name" class="border-0 rounded-2 input-text" required>
+                      </div>
+                    </div>
+                    <div class="col-12 my-3 d-flex flex-column">
+                      <label for="email" class="fw-bold mb-2 ">Email</label>
+                      <input type="text" id="email" placeholder="Enter Email" class="border-0 rounded-2 input-text" required>
+                    </div>
+          
+                    <div class="col-12 my-3 d-flex flex-column">
+                      <label for="Password" class="fw-bold mb-2 ">Password</label>
+                      <input type="password" id="password" placeholder="Enter Password" class="border-0 rounded-2 input-text"
+                        required>
+                    </div>
+          
+                    <div class="col-12 my-3 ">
+                      <button type="submit" class="btn bg-primary w-100 text-white">Submit</button>
+                    </div>
+          
+                  </div>
+                </form>
+          
+                <div class="d-flex justify-content-center">
+                  <div class="p-3">
+                    <p class="text-center"> Don't have an account? <a href="#" class="text-decoration-none">Login</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          
+            <!-- popup part of signup end -->
+
+        <!-- banner- part start -->
+    
+        <section class="contant-banner d-flex justify-content-center align-items-center">
+            <div class="w-100">
+                <h1 class=" text-center about-text">
+                    CARS COLLECTION
+                </h1>
+                <hr class="w-25 mx-auto text-white opacity-100 border-5">
+            </div>
+        </section>
+    
+            <!-- about part start -->
+
+  <!-- Services section start -->
+
+  <section class="py-5" id="car-services">
+    <div class="container-fluid text-center fw-bold common-title">
+      <h2 class="common-heading">
+        Our Services to Providing<br />Cars
+      </h2>
+      <hr class="w-25 mx-auto" />
+    </div>
+
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="card shadow service-card">
+              <img src="/Maa-tour-and-travel-Portfolio/images/car 1.jpg" class="card-img-top" alt="books">
+              <div class="card-body over-card">
+                <h3 class="card-title mt-2 text-center">THAR</h3>
+                <p class="card-text mb-3 text-center fw-bold">Rs.60 <span class="text-danger">Per Km</span></p>
+                <div class="d-flex justify-content-evenly">
+                  <p class="small text-secondary">
+                    <i class="fa-solid fa-car"></i>Seater:7+1
+                  </p>
+                  <p class="small text-secondary">
+                    <i class="fa-solid fa-gear"></i>Manual
+                  </p>
+                </div>
+                <div class="d-flex justify-content-evenly my-4">
+                  <a href="#" class="btn btn-secondary  w-50 mx-1">Rent Cars</a>
+                  <a href="#" class="btn bg-danger text-white w-50">Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="card shadow service-card">
+              <img src="/Maa-tour-and-travel-Portfolio/images/car 1.jpg" class="card-img-top" alt="books">
+              <div class="card-body over-card">
+                <h3 class="card-title mt-2 text-center">THAR</h3>
+                <p class="card-text mb-3 text-center fw-bold">Rs.60 <span class="text-danger">Per Km</span></p>
+                <div class="d-flex justify-content-evenly">
+                  <p class="small text-secondary">
+                    <i class="fa-solid fa-car"></i>Seater:7+1
+                  </p>
+                  <p class="small text-secondary">
+                    <i class="fa-solid fa-gear"></i>Manual
+                  </p>
+                </div>
+                <div class="d-flex justify-content-evenly my-4">
+                  <a href="#" class="btn btn-secondary w-50 mx-1">Rent Cars</a>
+                  <a href="#" class="btn bg-danger text-white w-50">Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="card shadow service-card">
+              <img src="/Maa-tour-and-travel-Portfolio/images/car 1.jpg" class="card-img-top" alt="books">
+              <div class="card-body over-card">
+                <h3 class="card-title mt-2 text-center">THAR</h3>
+                <p class="card-text mb-3 text-center fw-bold">Rs.60 <span class="text-danger">Per Km</span></p>
+                <div class="d-flex justify-content-evenly">
+                  <p class="small text-secondary">
+                    <i class="fa-solid fa-car"></i>Seater:7+1
+                  </p>
+                  <p class="small text-secondary">
+                    <i class="fa-solid fa-gear"></i>Manual
+                  </p>
+                </div>
+                <div class="d-flex justify-content-evenly my-4">
+                  <a href="#" class="btn btn-secondary w-50 mx-1">Rent Cars</a>
+                  <a href="#" class="btn bg-danger text-white w-50">Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="card shadow service-card">
+              <img src="/Maa-tour-and-travel-Portfolio/images/car 1.jpg" class="card-img-top" alt="books">
+              <div class="card-body over-card">
+                <h3 class="card-title mt-2 text-center">THAR</h3>
+                <p class="card-text mb-3 text-center fw-bold">Rs.60 <span class="text-danger">Per Km</span></p>
+                <div class="d-flex justify-content-evenly">
+                  <p class="small text-secondary">
+                    <i class="fa-solid fa-car"></i>Seater:7+1
+                  </p>
+                  <p class="small text-secondary">
+                    <i class="fa-solid fa-gear"></i>Manual
+                  </p>
+                </div>
+                <div class="d-flex justify-content-evenly my-4">
+                  <a href="#" class="btn btn-secondary w-50 mx-1">Rent Cars</a>
+                  <a href="#" class="btn bg-danger text-white w-50">Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="card shadow service-card">
+              <img src="/Maa-tour-and-travel-Portfolio/images/car 1.jpg" class="card-img-top" alt="books">
+              <div class="card-body over-card">
+                <h3 class="card-title mt-2 text-center">THAR</h3>
+                <p class="card-text mb-3 text-center fw-bold">Rs.60 <span class="text-danger">Per Km</span></p>
+                <div class="d-flex justify-content-evenly">
+                  <p class="small text-secondary">
+                    <i class="fa-solid fa-car"></i>Seater:7+1
+                  </p>
+                  <p class="small text-secondary">
+                    <i class="fa-solid fa-gear"></i>Manual
+                  </p>
+                </div>
+                <div class="d-flex justify-content-evenly my-4">
+                  <a href="#" class="btn btn-secondary w-50 mx-1">Rent Cars</a>
+                  <a href="#" class="btn bg-danger text-white w-50">Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="card shadow service-card">
+              <img src="/Maa-tour-and-travel-Portfolio/images/car 1.jpg" class="card-img-top" alt="books">
+              <div class="card-body over-card">
+                <h3 class="card-title mt-2 text-center">THAR</h3>
+                <p class="card-text mb-3 text-center fw-bold">Rs.60 <span class="text-danger">Per Km</span></p>
+                <div class="d-flex justify-content-evenly">
+                  <p class="small text-secondary">
+                    <i class="fa-solid fa-car"></i>Seater:7+1
+                  </p>
+                  <p class="small text-secondary">
+                    <i class="fa-solid fa-gear"></i>Manual
+                  </p>
+                </div>
+                <div class="d-flex justify-content-evenly my-4">
+                  <a href="#" class="btn btn-secondary w-50 mx-1">Rent Cars</a>
+                  <a href="#" class="btn bg-danger text-white w-50">Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="card shadow service-card">
+              <img src="/Maa-tour-and-travel-Portfolio/images/car 1.jpg" class="card-img-top" alt="books">
+              <div class="card-body over-card">
+                <h3 class="card-title mt-2 text-center">THAR</h3>
+                <p class="card-text mb-3 text-center fw-bold">Rs.60 <span class="text-danger">Per Km</span></p>
+                <div class="d-flex justify-content-evenly">
+                  <p class="small text-secondary">
+                    <i class="fa-solid fa-car"></i>Seater:7+1
+                  </p>
+                  <p class="small text-secondary">
+                    <i class="fa-solid fa-gear"></i>Manual
+                  </p>
+                </div>
+                <div class="d-flex justify-content-evenly my-4">
+                  <a href="#" class="btn btn-secondary w-50 mx-1">Rent Cars</a>
+                  <a href="#" class="btn bg-danger text-white w-50">Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="card shadow service-card">
+              <img src="/Maa-tour-and-travel-Portfolio/images/car 1.jpg" class="card-img-top" alt="books">
+              <div class="card-body over-card">
+                <h3 class="card-title mt-2 text-center">THAR</h3>
+                <p class="card-text mb-3 text-center fw-bold">Rs.60 <span class="text-danger">Per Km</span></p>
+                <div class="d-flex justify-content-evenly">
+                  <p class="small text-secondary">
+                    <i class="fa-solid fa-car"></i>Seater:7+1
+                  </p>
+                  <p class="small text-secondary">
+                    <i class="fa-solid fa-gear"></i>Manual
+                  </p>
+                </div>
+                <div class="d-flex justify-content-evenly my-4">
+                  <a href="#" class="btn btn-secondary w-50 mx-1">Rent Cars</a>
+                  <a href="#" class="btn bg-danger text-white w-50">Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="card shadow service-card">
+              <img src="/Maa-tour-and-travel-Portfolio/images/car 1.jpg" class="card-img-top" alt="books">
+              <div class="card-body over-card">
+                <h3 class="card-title mt-2 text-center">THAR</h3>
+                <p class="card-text mb-3 text-center fw-bold">Rs.60 <span class="text-danger">Per Km</span></p>
+                <div class="d-flex justify-content-evenly">
+                  <p class="small text-secondary">
+                    <i class="fa-solid fa-car"></i>Seater:7+1
+                  </p>
+                  <p class="small text-secondary">
+                    <i class="fa-solid fa-gear"></i>Manual
+                  </p>
+                </div>
+                <div class="d-flex justify-content-evenly my-4">
+                  <a href="#" class="btn btn-secondary w-50 mx-1">Rent Cars</a>
+                  <a href="#" class="btn bg-danger text-white w-50">Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="card shadow service-card">
+              <img src="/Maa-tour-and-travel-Portfolio/images/car 1.jpg" class="card-img-top" alt="books">
+              <div class="card-body over-card">
+                <h3 class="card-title mt-2 text-center">THAR</h3>
+                <p class="card-text mb-3 text-center fw-bold">Rs.60 <span class="text-danger">Per Km</span></p>
+                <div class="d-flex justify-content-evenly">
+                  <p class="small text-secondary">
+                    <i class="fa-solid fa-car"></i>Seater:7+1
+                  </p>
+                  <p class="small text-secondary">
+                    <i class="fa-solid fa-gear"></i>Manual
+                  </p>
+                </div>
+                <div class="d-flex justify-content-evenly my-4">
+                  <a href="#" class="btn btn-secondary w-50 mx-1">Rent Cars</a>
+                  <a href="#" class="btn bg-danger text-white w-50">Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="card shadow service-card">
+              <img src="/Maa-tour-and-travel-Portfolio/images/car 1.jpg" class="card-img-top" alt="books">
+              <div class="card-body over-card">
+                <h3 class="card-title mt-2 text-center">THAR</h3>
+                <p class="card-text mb-3 text-center fw-bold">Rs.60 <span class="text-danger">Per Km</span></p>
+                <div class="d-flex justify-content-evenly">
+                  <p class="small text-secondary">
+                    <i class="fa-solid fa-car"></i>Seater:7+1
+                  </p>
+                  <p class="small text-secondary">
+                    <i class="fa-solid fa-gear"></i>Manual
+                  </p>
+                </div>
+                <div class="d-flex justify-content-evenly my-4">
+                  <a href="#" class="btn btn-secondary w-50 mx-1">Rent Cars</a>
+                  <a href="#" class="btn bg-danger text-white w-50">Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="card shadow service-card">
+              <img src="/Maa-tour-and-travel-Portfolio/images/car 1.jpg" class="card-img-top" alt="books">
+              <div class="card-body over-card">
+                <h3 class="card-title mt-2 text-center">THAR</h3>
+                <p class="card-text mb-3 text-center fw-bold">Rs.60 <span class="text-danger">Per Km</span></p>
+                <div class="d-flex justify-content-evenly">
+                  <p class="small text-secondary">
+                    <i class="fa-solid fa-car"></i>Seater:7+1
+                  </p>
+                  <p class="small text-secondary">
+                    <i class="fa-solid fa-gear"></i>Manual
+                  </p>
+                </div>
+                <div class="d-flex justify-content-evenly my-4">
+                  <a href="#" class="btn btn-secondary w-50 mx-1">Rent Cars</a>
+                  <a href="#" class="btn bg-danger text-white w-50">Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- Services section end -->
+        <!-- footer part start -->
+
+        <section class="footer-part bg-black pt-5">
+            <div class="container">
+              <div class="row g-4">
+                <div class="col-12 col-md-4">
+                  <div class="footer-contant">
+                    <h3 class="text-danger">MAA</h3>
+                    <h5 class="text-white">TOUR AND TRAVELS</h5>
+                    <hr class="w-25 text-danger border-3 opacity-100 m-0">
+                    <p class="text-white pt-3">Our ace car rental service in Bhopal includes pick up & drops off at railway station and the airport, marriage assistance, festivals, sight-seeing, trips, tours, events and many more. We are the best tour and travels in Bhopal which offers best of facilities and services with affordability, comfort and security.</p>
+      
+                    <h3 class="text-white pt-4">Ranchi Head Office</h3>
+                    <hr class="w-25 text-danger border-3 opacity-100 m-0">
+                    <p class="text-white pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi delectus sapiente magni sequi. Porro ipsam error eligendi iure, tempore quam?</p>
+                  </div>
+                </div>
+      
+                <div class="col-12 col-md-4">
+                  <div class="footer-contant">
+                    <h3 class="text-white">QUICK LINKS</h3>
+                    <hr class="w-25 text-danger border-3 opacity-100">
+                    <div class="d-flex flex-column">
+                    <a href="#" class="py-2 text-white">About</a>
+                    <a href="#" class="pb-2 text-white">Contact Us</a>
+                    <a href="#" class="pb-2 text-white">Services</a>
+                    <a href="#" class="pb-2 text-white">Blogs</a>
+                  </div>
+                  </div>
+                </div>
+      
+                <div class="col-12 col-md-4">
+                  <div class="footer-contant">
+                    <h3 class="text-white">GOOGLE MAP</h3>
+                    <hr class="w-25 text-danger border-3 opacity-100">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212162.4649491268!2d85.15651250337554!3d23.34343381744094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e104aa5db7dd%3A0xdc09d49d6899f43e!2sRanchi%2C%20Jharkhand!5e1!3m2!1sen!2sin!4v1725344108794!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-75"></iframe>
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+          </section>
+          <hr class="w-100 m-0 text-white">
+          <div class="fav bg-black">
+            <h5 class="p-4 m-0 text-white">Desined By: Sumit Kumar</h5>
+          </div>
+      
+          <!-- footer part end -->
+      
+      
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+          <script src="/Maa-tour-and-travel-Portfolio/script.js"></script>
+      </body>
+      </html>

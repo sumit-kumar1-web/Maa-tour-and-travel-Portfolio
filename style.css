@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'urbanist', sans-serif;
+}
+:root{
+    --bs-dark-primary: #ffffff;
+    --bs-main-color: #000000;
+    --secondary-color: #fd2929;
+    
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Lexend Deca', sans-serif;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    line-height: 3rem;
+    font-weight: 600;
+    font-size: 3.4rem;
+}
+p{
+    margin: 0px;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.07rem;
+    line-height: 1.55rem;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.common-heading{
+    font-size: 2.8rem;
+    font-weight: 500;
+    letter-spacing: 0.01rem !important;
+    text-shadow: 1px 1px 2px red;
+}
+.common-title{
+    margin-bottom: 4.2rem;
+}
+
+/* navbar styling start */
+.main-head{
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+.heading-logo{
+    width: 6rem;
+}
+
+
+.navbar{
+    background: rgb(0, 0, 0);
+    height: 95px !important;
+
+}
+.nav-link{
+    color: var(--bs-dark-primary);
+    font-size: large;
+}
+
+.nav-link:hover{
+    color: var(--secondary-color);
+}
+.head-btn a{
+    color: #0c0c0c;
+}
+.head-btn:hover{
+    background-color: var(--secondary-color) !important;
+}
+
+/* navbar styling end */
+
+/* popup menu styiling par start */
+
+.overlay{
+    background-color: rgb(210, 230, 237);
+    position: fixed;
+    top: 0;
+    transition: 1s;
+    opacity: 0;
+    }
+
+    .overlay-visible{
+        opacity: 1;
+        z-index: 500;
+        width: 100vw;
+        height: 100vh;
+    }
+    .login-form{
+        
+        background-color: whitesmoke;
+        display: none;
+        position: absolute;
+        z-index: 1000;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        transition: 1s;
+    }
+    .showLoginForm{
+        display: block;
+    }
+    .input-text{
+    height: 30px;
+    padding: 10px;
+}
+.close-btn{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+/* popup menu styiling par end */
+
+/*signup popup menu styiling part Start */
+
+.signup-overlay{
+    background-color: rgb(210, 230, 237);
+    position: fixed;
+    top: 0;
+    transition: 1s;
+    opacity: 0;
+    }
+
+    .signup-overlay-visible{
+        opacity: 1;
+        z-index: 500;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .signup-form{
+        background-color: whitesmoke;
+        display: none;
+        position: absolute;
+        z-index: 1000;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        transition: 1s;
+    }
+    .showSignupForm{
+        display: block;
+    }
+/*signup popup menu styiling part end */
+
+/* contact banner styling start */
+
+.service-card{
+    width: 100%;
+}
+.contant-banner{
+    height: 30vh;
+    background-image: url(images/view-3d-car-interior.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: .75;
+}
+.about-text{
+    color: red;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* contact banner styling end */
+
+/* banner section styling part start */
+
+.bg-main{
+    background-color: rgb(0, 0, 0);
+    /* height: 70vh; */
+}
+
+/* banner section styling part end */
+
+/* Sercices car part styling start */
+
+.btn-secondary{
+    background-color: var(--bs-main-color);
+}
+.btn-secondary:hover{
+    background-color: var(--secondary-color);
+}
+
+/* Sercices car part styling end */
+
+/* about section start */
+
+.about-img{
+    width: 40rem;
+}
+
+/* about section end */
+
+/* media quries max-width 430px styling  start*/
+
+@media screen and (max-width:430px) {
+
+    .banner-heading{
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+        padding: 15px;
+        margin-bottom: 0px !important;
+    }
+    .banner-text{
+        padding: 10px;
+        margin-top: 0px !important;
+        text-align: center;
+    }
+    .login-form{
+        width: 90%;
+    }
+    .signup-form{
+        width: 90%;
+    }
+    .form-section{
+        width: 90% !important;
+    }
+}
+
+/* media quries max-width 430px styling  end*/
